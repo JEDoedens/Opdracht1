@@ -152,6 +152,8 @@ main article header button{
 main article footer{
   display: flex;
   flex-direction: row;
+  margin-top: 0.5em;
+  height: 5em;
 }
 
 main article footer ul{
@@ -166,4 +168,18 @@ main article footer ul:nth-of-type(2) li:nth-of-type(2){
   display: flex;
   align-items: center;
   padding-top: 0.2em;
+}
+
+main > footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #LastButton {
+  background-color: black;
+  border-radius: 1em;
+  padding: 1em;
+  color: white;
+  margin: 1em;
 }
