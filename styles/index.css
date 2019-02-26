@@ -139,10 +139,38 @@ main article header{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 11em;
 }
 
-main article header img{
-  position: relative;
+main article header {
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+main article.track1 header {
+  background-image: url("../images/album1.jpg");
+}
+
+main article.track2 header {
+  background-image: url("../images/album2.jpg");
+}
+
+main article.track3 header {
+  background-image: url("../images/album3.jpg");
+}
+
+main article.track4 header {
+  background-image: url("../images/album4.jpg");
+}
+
+main article.track5 header {
+  background-image: url("../images/album5.jpg");
+}
+
+main article.track6 header {
+  background-image: url("../images/album6.jpg");
 }
 
 main article header button{
@@ -152,7 +180,7 @@ main article header button{
 main article footer{
   display: flex;
   flex-direction: row;
-  margin-top: 0.5em;
+  margin: 0.5em 0.5em 0 0.5em;
   height: 5em;
 }
 
