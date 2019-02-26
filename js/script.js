@@ -1,19 +1,20 @@
-console.log("hallo");
+
+var dragFromDiv;
 
 function allowDrop(ev) {
 	ev.preventDefault();
 }
 
 function drag(ev) {
-	console.log("drag");
-	console.log(ev.target.id);
 	ev.dataTransfer.setData("text", ev.target.id);
+	dragFromDiv = (ev.target.parentElement);
 }
 
 function drop(ev) {
-	console.log("drop");
 	ev.preventDefault();
-	var data = ev.dataTransfer.getData("text");
-	console.log(data);
-  ev.target.appendChild(document.getElementById(data));
+	var dragData = ev.dataTransfer.getData("text");
+	var newData = ev.target.parentElement;
+
+  ev.target.parentElement.parentElement.appendChild(document.getElementById(dragData));
+	dragFromDiv.appendChild(newData);
 }

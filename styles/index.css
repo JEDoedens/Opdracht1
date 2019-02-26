@@ -56,12 +56,11 @@ svg#fsleutel path{
 
 svg#playbutton {
   width: 2rem;
-  display: none;
+  display: block;
 }
 
 article:hover svg#playbutton {
-  width: 2rem;
-  display: block;
+  width: 2.5rem;
 }
 
 svg#playbutton path{
@@ -129,21 +128,30 @@ main section{
   flex-wrap: wrap;
 }
 
-article{
+div{
   width: 31.2%;
-  margin: 0.5em;
+  margin: 0.75em;
   box-shadow: 0 10px 30px 0 rgba(35, 31, 32, .1);
+}
+
+div:hover {
+  width: 31.2%;
+  padding: 0.25em;
+  margin: 0.5em;
+}
+
+div:hover header{
+  padding: 0 0.25em;
+  margin: 0 -0.25em;
+  background-size: 145%;
 }
 
 main article header{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 11em;
-}
-
-main article header {
-  background-size: 120%;
+  height: 16em;
+  background-size: 140%;
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -181,7 +189,7 @@ main article footer{
   display: flex;
   flex-direction: row;
   margin: 0.5em 0.5em 0 0.5em;
-  height: 5em;
+  height: 7em;
 }
 
 main article footer ul{
@@ -190,6 +198,20 @@ main article footer ul{
 
 main article footer ul li{
   padding: 0.1em;
+}
+
+main article footer ul:first-of-type li:nth-child(odd){
+  font-size: 0.75em;
+  font-weight: bolder;
+}
+
+main article footer ul:first-of-type li:nth-child(3){
+  margin-top: 0.75em;
+}
+
+main article footer ul:last-of-type li:nth-child(1){
+  font-size: 0.75em;
+  font-weight: bolder;
 }
 
 main article footer ul:nth-of-type(2) li:nth-of-type(2){
